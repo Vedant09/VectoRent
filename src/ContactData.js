@@ -39,6 +39,7 @@ export default [
         phone : "(239)233-4433",
         email : "ruki@gmail.com",
         status : 0
-    }
+    },
+    {}
     
 ]

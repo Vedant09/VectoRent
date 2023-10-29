@@ -21,8 +21,7 @@ export default function Contact(props){
     // console.log(`count click on ${props.name} is ${count+1}`);
     // return count;
   }
-
-  return(
+  return( props.id &&
     <div onClick={ClicOver} className="contact-card">
       {badgeName && <div className='card-badge'>{badgeName}</div>}
             <img src={props.img} alt=""/>

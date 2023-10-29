@@ -35,5 +35,5 @@ export default [
         city : "Fairfax, VA",
         saledeadline : "Sale Ends in 20 days!",
         cost:"$10 off"
-    }
+    },{}
 ]

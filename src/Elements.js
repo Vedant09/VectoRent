@@ -42,7 +42,7 @@ export default function Elements(props) {
       }
     
     // let icon = type === "Vehicles" && prost.isFav?`${c}` : `${props.items.img}` 
-    return (
+    return ( props.id &&
         <div className='card-div '>
             <div onClick={toggleImge} className='cards-each'>
                 

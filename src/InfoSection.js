@@ -9,7 +9,6 @@ function ContactCard() {
       <Contact
         id={contacts.id}
         {...contacts}
-        
       />
     )
   })
@@ -21,8 +20,8 @@ function ContactCard() {
   );
 }
 
-function Signup(){
-  console.log("signup button clicked")
+function SignIn(){
+  alert("Sign In")
 }
 
 export default function InfoSection() {
@@ -31,7 +30,7 @@ export default function InfoSection() {
       <h1>Meet Our Developers</h1>
       <ContactCard />
       <span>
-        <button onClick={Signup} className='class-button'>Sign Up </button>
+        <button onClick={SignIn} className='class-button'>Sign In</button>
         <p>It's Free!!!</p>
         <h3>Click here to check rewards</h3>
       </span>

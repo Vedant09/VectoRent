@@ -26,7 +26,7 @@ function Card() {
 }
 
 function handleClick(){
-  alert("hi")
+  alert("Register today")
 }
 
 export default function MainContent() {
@@ -35,7 +35,7 @@ export default function MainContent() {
       <h1>REQUEST-RENT-REUSE-RETURN</h1>
       <Card /> 
       <span>
-        <button onClick={handleClick}>Register Today!!</button><hr />
+        <button className='class-button' onClick={handleClick}>Register Today!!</button><hr />
         <p>We have what you need!! Rent Anything, Anywhere!</p>
       </span>
     </div>

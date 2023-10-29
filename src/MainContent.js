@@ -25,13 +25,17 @@ function Card() {
   )
 }
 
+function handleClick(){
+  alert("hi")
+}
+
 export default function MainContent() {
   return (
     <div className='main'>
       <h1>REQUEST-RENT-REUSE-RETURN</h1>
       <Card /> 
       <span>
-        <h1>Register Today!!</h1><hr />
+        <button onClick={handleClick}>Register Today!!</button><hr />
         <p>We have what you need!! Rent Anything, Anywhere!</p>
       </span>
     </div>

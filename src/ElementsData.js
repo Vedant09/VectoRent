@@ -8,9 +8,9 @@ export default [
     {
         id : 1,
         img : House,
-        type : "House",
+        type : "Houses",
         city : "Fairfax, VA",
-        saledeadline : "Sale Ends in 10 days!",
+        saledeadline : "Sale Starts in 10 days!",
         cost:"$10 off"
     },
     {
@@ -18,7 +18,7 @@ export default [
         img : Veh,
         type : "Vehicles",
         city : "Fairfax, VA",
-        saledeadline : "Sale Ends in 8 days!",
+        saledeadline : "Sale Starts in 8 days!",
         cost: "$10 off Additional line of data"
     },
     {
@@ -26,14 +26,14 @@ export default [
         img : Courts,
         type : "Courts",
         city : "Fairfax, VA",
-        saledeadline : "Summer Sale Ends in 15"
+        saledeadline : "Winter Sale starts in 15 days"
     },
     {
         id : 4,
         img : Others,
         type : "Others",
         city : "Fairfax, VA",
-        saledeadline : "Sale Ends in 20 days!",
+        saledeadline : "Sale Starts  in 20 days!",
         cost:"$10 off"
     },{}
 ]

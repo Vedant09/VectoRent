@@ -1,7 +1,8 @@
 import React from 'react'
 import Elements from './Elements'
 import items from '../ElementsData'
-import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils'
+import { Link } from 'react-router-dom'
+
 
 /*
 This is a card funtion where the values are coming from the data file where any number of items can be included.
@@ -24,10 +25,7 @@ function Card() {
       {elementsDetails}
     </div>
   )
-}
-
-function handleClick(){
-  alert("Register today")
+  
 }
 
 export default function MainContent() {
@@ -36,11 +34,11 @@ export default function MainContent() {
       fontStyle : "italic"
   }
   return (
-    <div className='main'>
+    <div className='maincontent'>
       <h1 style={styles}>REQUEST-RENT-REUSE-RETURN</h1>
       <Card /> 
       <span>
-      <a href="#" class="btn btn-white btn-animation-1" onClick={handleClick}>Register Today</a><hr />
+      <Link to='/signup' class="btn btn-white btn-animation-1" >Register Today</Link><hr />
         <p>We have what you need!! Rent Anything, Anywhere!</p>
       </span>
     </div>

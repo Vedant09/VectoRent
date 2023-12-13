@@ -1,7 +1,7 @@
 *{
   font-family:Poppins;
+  text-decoration: none;
 }
-
 nav{
   position: relative;
   z-index: 99;
@@ -82,7 +82,7 @@ nav input{
   font-size: 45px;
   font-weight: 600;
 }
-.main {
+.maincontent {
   display: flex;
   /* height: 50vh; */
   width: 100%;
@@ -162,6 +162,7 @@ nav input{
   gap: 90px;
   align-items: stretch;
   border-radius: 10px;
+  color: #000;
 }
 
 .cards-each:hover {
@@ -316,4 +317,39 @@ span{
 .btn-animation-1:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+
+/* Login page */
+
+.login-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87vh;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.login-image{
+  margin: auto;
+  height: 150px;
+  width: 120px;
+  border-radius: 16px;
+}
+
+.login-form{
+  display: inline-grid;
+    align-items: center;
+    height: 66%;
+    width: 49%;
+    padding: 20px;
+    border: ridge;
+    align-content: space-evenly;
+    justify-items: center;
+    background-color: mintcream;
+    justify-content: space-evenly;
+}
+
+.form-username,.form-password{
+  font-size: x-large;
 }

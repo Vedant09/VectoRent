@@ -34,7 +34,7 @@ export default function Contact(props){
                 <img src={mail} alt=''/>
                 <p>{props.email}</p>
             </div>
-            <p>{`clicked --> ${count} times`}</p>
+            <p>{`Endorsed by ${count} Leaders`}</p>
     </div>
   )
 }

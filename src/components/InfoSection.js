@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Contact from '../components/Contact'
 import contactsData from '../ContactData'
 
@@ -20,10 +21,6 @@ function ContactCard() {
   );
 }
 
-function SignIn(){
-  alert("Sign In")
-}
-
 export default function InfoSection() {
   return (
     <div className='infosection'>
@@ -31,7 +28,7 @@ export default function InfoSection() {
       <ContactCard />
       <span>
       <div class="box">
-      <a href="#" class="btn btn-white btn-animation-1" onClick={SignIn}>Sign Up</a> <hr />
+      <Link to="/signup" class="btn btn-white btn-animation-1">Sign Up</Link> <hr />
       </div>
         <h3>Click here to check rewards</h3>
       </span>

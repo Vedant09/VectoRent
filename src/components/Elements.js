@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import c from '../images/needacar.png'
 import rts from '../images/needacourt.png'
 import it from '../images/needanitem.png'
@@ -13,6 +14,7 @@ export default function Elements(props) {
     const [prost, setProst] = React.useState({
         isFav:false
     })
+
 
     let type = `${props.items.type}`
     function toggleImge(){
@@ -34,7 +36,7 @@ export default function Elements(props) {
         case "Others":
           icon = prost.isFav ? `${it}` : `${props.items.img}`;
           break;
-        case "House":
+        case "Houses":
           icon = prost.isFav ? `${rent}` : `${props.items.img}`;
           break;
         default:
@@ -43,9 +45,8 @@ export default function Elements(props) {
     
     // let icon = type === "Vehicles" && prost.isFav?`${c}` : `${props.items.img}` 
     return ( props.id &&
-        <div className='card-div '>
-            <div onClick={toggleImge} className='cards-each'>
-                
+        <Link to={`/${type}`}><div className='card-div '>
+              <div onClick={toggleImge} className='cards-each'>
                 <img src={icon} alt="img"/>
                 <h3>{props.items.type}</h3>
                 <p>{props.items.city}</p>
@@ -55,5 +56,6 @@ export default function Elements(props) {
                 </span>
             </div>
         </div>
+        </Link>
     )
 } 

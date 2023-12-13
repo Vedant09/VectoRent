@@ -1,27 +1,65 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 
-export default function Navbar(){
 
-
-function Navbar(){
+export default function Navbars(){
   return(
-  <nav>
-    <div class="wrapper">
-      <div class="logo"><a href="#">VectoRent</a></div>
-      <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Community</a> </li>
-          <li><a href="#">Login</a></li>
-        </ul>
+    <div>
+    <nav>
+      <div className='wrapper'>
+        <div className='logo'>
+        <Link to="/">VectoRent</Link>
+        </div>
+      <ul className="nav-links">
+      <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/community">Community</Link>  </li>
+      </ul >
+      </div>
+  </nav>
   </div>
-</nav>
+
+
 )
 }
 
-return(
-  <div>
-    <Navbar/>
-  </div>
-)
-}
+
+
+// export default function Navbar(){
+//     return (
+//         <BrowserRouter>
+//           <header>
+//             <Link className="site-logo" to="/">VectoRent</Link>
+//             <nav>
+//               <Link to="/about">About</Link>
+//               <Link to="/login">Login</Link>
+//               <Link to="/community">Community</Link>
+//             </nav>
+//           </header>
+//         <Routes>
+//           <Route path='/' element={<Home/>}/>
+//           <Route path='/about' element={<About/>}/>
+//           <Route path='/login' element={<Login/>}/>
+//           <Route path='/community' element={<Community/>}/>
+//         </Routes>
+//       </BrowserRouter>
+//       );
+// }
+
+// export default function Navbars(){
+//   return(
+// <nav>
+//   <div className="wrapper">
+//       <div className="logo">
+//         <a href='/'>VectoRent</a>
+//       </div>
+//       <ul className="nav-links">
+//         <li><a href="/">Home</a></li>
+//         <li><a href="/about">About</a></li>
+//         <li><a href="/community">Community</a></li>
+//         <li><a href="/login">Login</a></li>
+//       </ul>
+//     </div>
+// </nav>
+//  )}

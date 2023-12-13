@@ -11,7 +11,7 @@ export default function Navbars(){
         <Link to="/">VectoRent</Link>
         </div>
       <ul className="nav-links">
-      <li><Link to="/">Home</Link></li>
+      <li><Link to="/home">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/login">Login</Link></li>
         <li><Link to="/community">Community</Link>  </li>

@@ -88,14 +88,15 @@ nav input{
 }
 .maincontent {
   display: flex;
-  width: 100%;
+  text-align: center;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  row-gap: 1px;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 1);
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 25px;
+  row-gap: 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 1); 
 }
 
 .infosection {
@@ -162,7 +163,7 @@ nav input{
   flex-wrap:  wrap;
   row-gap: 20px;
   padding: 20px 36px 20px 20px;
-  gap: 90px;
+  gap: 65px;
   align-items: stretch;
   border-radius: 10px;
   color: #000;
@@ -201,15 +202,22 @@ nav input{
   width: 300px;
   max-width: 300px;
 }
-
+.cards-div{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 13px;
+  padding-bottom: 20px;
+  background-color: white;
+  position: relative;
+  color: #000;
+}
 
 .contact-card {
-  /* flex-basis: 225px; */
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   padding: 13px;
   padding-bottom: 20px;
   background-color: white;

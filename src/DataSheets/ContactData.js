@@ -39,38 +39,6 @@ export default [
         phone : "(239)233-4433",
         email : "ruki@gmail.com",
         status : 0
-    },
-    {
-        id : 4,
-        img : P4,
-        name : "Mr. Rurki",
-        phone : "(239)233-4433",
-        email : "ruki@gmail.com",
-        status : 0
-    },
-    {
-        id : 4,
-        img : P4,
-        name : "Mr. Rurki",
-        phone : "(239)233-4433",
-        email : "ruki@gmail.com",
-        status : 0
-    },
-    {
-        id : 4,
-        img : P4,
-        name : "Mr. Rurki",
-        phone : "(239)233-4433",
-        email : "ruki@gmail.com",
-        status : 0
-    },
-    {
-        id : 4,
-        img : P4,
-        name : "Mr. Rurki",
-        phone : "(239)233-4433",
-        email : "ruki@gmail.com",
-        status : 0
     }
     
 ]

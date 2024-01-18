@@ -46,7 +46,7 @@ export default function Elements(props) {
     // let icon = type === "Vehicles" && prost.isFav?`${c}` : `${props.items.img}` 
     return ( props.id &&
       <Link to={`/${type}`}>
-          <div className='card-div'>
+          <div className='cards-div'>
               <div onClick={toggleImge} className='cards-each'>
                 <img src={icon} alt="img"/>
                 <h3>{props.items.type}</h3>

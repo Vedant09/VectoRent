@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Contact from '../components/Contact'
-import contactsData from '../ContactData'
+import contactsData from '../DataSheets/ContactData'
 
 
 function ContactCard() {
@@ -27,10 +27,10 @@ export default function InfoSection() {
       <h1>Meet Our Developers</h1>
       <ContactCard />
       <span>
-      <div class="box">
-      <Link to="/signup" class="btn btn-white btn-animation-1">Sign Up</Link> <hr />
-      </div>
-        <h3>Click here to check rewards</h3>
+          <div class="box">
+            <Link to="/newsletter" class="btn btn-white btn-animation-1">Sign Up For News Letter</Link> <hr />
+          </div>
+        <Link to="/rewards" className='link'>Click Here For Offers</Link>
       </span>
     </div>
   );

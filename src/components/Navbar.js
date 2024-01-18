@@ -8,7 +8,7 @@ export default function Navbars(){
     <nav>
       <div className='wrapper'>
         <div className='logo'>
-        <Link to="/">VectoRent</Link>
+        <Link to="/home">VectoRent</Link>
         </div>
       <ul className="nav-links">
       <li><Link to="/home">Home</Link></li>

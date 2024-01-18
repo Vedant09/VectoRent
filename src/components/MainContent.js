@@ -1,6 +1,6 @@
 import React from 'react'
 import Elements from './Elements'
-import items from '../ElementsData'
+import items from '../DataSheets/ElementsData'
 import { Link } from 'react-router-dom'
 
 
@@ -21,7 +21,7 @@ function Card() {
   })
 
   return (
-    <div className='card-div '>
+    <div className='card-div'>
       {elementsDetails}
     </div>
   )

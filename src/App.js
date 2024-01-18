@@ -11,12 +11,13 @@ import Houses from '../src/RentType/Houses'
 import Courts from '../src/RentType/Courts'
 import Vehicles from '../src/RentType/Vehicles'
 import Others from '../src/RentType/Others'
+import Postings from '../src/RentType/Postings'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import IndexPage from './components/IndexPage';
 
 export default function App() {
   return (
-    <div className='main'>
+    <div className='App'>
 
 <BrowserRouter>
       <Navbar />
@@ -31,6 +32,7 @@ export default function App() {
           <Route path='/courts' element={<Courts/>}/>
           <Route path='/vehicles' element={<Vehicles/>}/>
           <Route path='/others' element={<Others/>}/>
+          <Route path='/postings' element={<Postings/>}/>
         </Routes>
       <Footer />
 </BrowserRouter>

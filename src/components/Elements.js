@@ -45,7 +45,8 @@ export default function Elements(props) {
     
     // let icon = type === "Vehicles" && prost.isFav?`${c}` : `${props.items.img}` 
     return ( props.id &&
-        <Link to={`/${type}`}><div className='card-div '>
+      <Link to={`/${type}`}>
+          <div className='card-div'>
               <div onClick={toggleImge} className='cards-each'>
                 <img src={icon} alt="img"/>
                 <h3>{props.items.type}</h3>
@@ -56,6 +57,6 @@ export default function Elements(props) {
                 </span>
             </div>
         </div>
-        </Link>
+      </Link>
     )
 } 
